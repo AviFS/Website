@@ -1,0 +1,30 @@
+body {
+  margin: 10;
+  /*font: Courier
+  font-size: 18px;
+  color: orange;
+  background-color: black;*/
+}
+
+#content{
+  background-color: black;
+}
+
+h1 {
+  color: orange;
+  font-size: 36 px;
+  font-family: "Courier New";
+  font-weight: lighter;
+}
+
+row {
+  display: flex;
+  height: 50%;
+}
+
+.image {
+  border: 4px;
+  margin = 20px;
+  border-style: solid;
+  border-color: orange;
+}

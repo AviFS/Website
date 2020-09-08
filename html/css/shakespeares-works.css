@@ -1,0 +1,106 @@
+/******** All ***********/
+
+* {
+  width: 1200px;
+}
+
+/******** Headings ***********/
+
+h1 {
+  font-family: cursive;
+  color: #5a584a;
+}
+
+#heading {
+  font-size: 48px;
+  text-align: center;
+}
+
+#subheading {
+  font-size: 24px;
+  padding-left: 50px;
+}
+
+#content {
+  border-style: dashed;
+  background-color: #c6dab2;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+/******** Image ***********/
+
+img {
+  width: 100%;
+  height: 400px;
+}
+
+/******** Buttons ***********/
+
+.button {
+  width: 16.66%;
+  border-radius: 15px;
+  background-color: #5a584a;
+  font-family: helvetica;
+  padding: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px;
+  font-size: 18px;
+}
+
+/******** Links ***********/
+
+a {
+  color: burlywood;
+  text-decoration: none;
+}
+
+a:hover {
+  color: peru;
+  }
+
+.row {
+  display: flex;
+}
+
+/******** Lower Bits **********/
+#text {
+  width: 400px;
+  margin-left: 90px;
+  margin-bottom: 20px;
+}
+
+#text {
+  font-size: 13px;
+  color: darkblue;
+}
+
+/******** Table Bits **********/
+table {
+  font-size: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 500px;
+  font-size: 16px;
+  background-color: #5a584a;
+  border-radius: 8px;
+  color: #b4a481;
+  border-spacing: 8px;
+  border-collapse: separate;
+}
+
+td:not(:first-child) {width: 250px;}
+
+td:first-child {
+  font-style: italic;
+  width: 100px;
+}
+
+tr:first-child {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+th { border: solid; border-radius: 6px;}

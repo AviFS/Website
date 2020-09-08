@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Wages App</title>
+  <!-- Download jQuery Libraries from CDNs. Includes Mobile CSS and core JavaScript files -->
+  <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <script type='text/javascript' src='js/typing-tutor.js'></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div data-role="page">
+    <div data-role="header">
+      <h1>Typing Tutor</h1>
+    </div>
+
+    <div data-role="content">
+
+      <!-- Radio Buttons for Difficulty (Beginner and Advanced) -->
+      <div data-role="controlgroup" name="difficulty">
+        <label for="beginner">Beginner</label>
+        <input type="radio" id="beginner" value="beginner" name="difficulty">
+        <label for="advanced">Advanced</label>
+        <input type="radio" id="advanced" value="advanced" name="difficulty">
+      </div>
+
+      <div>
+        <button id="start" onclick="start();">Start Test</button>
+        <input type="text" disabled="disabled" id="instructions" style="background-color: red; color: black; text-shadow: none;">
+        <input type="text" id="input" placeholder="Enter Text Here" style="background-color: lightgreen; color: dimgrey; text-shadow: none;">
+        <button id="stop" onclick="stop();">Stop Test</button>
+      </div>
+
+
+
+    </div>

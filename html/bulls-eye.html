@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Bull's Eye</title>
+    <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <meta charset="utf-8">
+    <script type="text/javascript" src="./js/bulls-eye.js">window.onresize = resize;</script>
+  </head>
+  <body onload="resize();" onresize="resize();">
+    <div data-role="page">
+
+        <div data-role="header">
+          <h1>Bull's Eye</h1>
+        </div>
+
+        <div data-role="content">
+
+          <div data-role="fieldcontain">
+            <label for="num">Darkness Incrementer</label>
+            <input type="range" id="darker" min="0" max="300" value="64" onchange="resize();">
+          </div>
+
+          <canvas id="bulls-eye"></canvas>
+        </div>
+    </div>
+</body>
+</html>

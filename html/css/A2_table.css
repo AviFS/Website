@@ -1,0 +1,50 @@
+h1 {
+  text-align: center;
+}
+
+table, th, td {
+  /* These two lines center the table */
+  margin-left: auto;
+  margin-right: auto;
+  /* ------------------------------- */
+  text-align: center;
+  border: 1px black solid;
+  /* This line makes there be just one border in between boxes (instead of one for each = 2). */
+  border-collapse: collapse;
+}
+
+/* This makes the first column bold and surrounded by light orange*/
+td:first-child {
+  background-color: orange;
+  font-weight: bold;
+}
+/* ------------------------------- */
+
+th {
+  background-color: dimgray;
+  color: white;
+}
+
+.sleep {
+  background-color: lightblue;
+}
+
+.web_programming {
+  background-color: plum;
+}
+
+.number_theory {
+  background-color: dodgerblue;
+}
+
+.physics2 {
+  background-color: lightgreen;
+}
+
+.topology {
+  background-color: salmon;
+}
+
+.lab {
+  background-color: tan;
+}

@@ -1,0 +1,91 @@
+<html>
+  <head>
+  <title>Assignment 10</title>
+  </head>
+
+  <body>
+
+    <h3 style="color:darkblue;">Sorry folks, this is on Moodle. However, here is the text file:</h3>
+
+    <p>
+    CS222 Web Programming Assignment 10
+
+    Instructor: Trish Cornez
+
+
+
+
+    Questions about PHP and MySQL
+
+
+    Answer the following questions. Provide in-depth answers.
+    1. Describe the parameters and objectives of the PHP functions strstr() and stristr().
+    Explain the difference(s) between the two.
+    They both search for the first occurrence of a string inside of another string, the first parameter being the whole string, the second parameter being the bit that is looked for inside of the first one.  Optionally, one may pass a third parameter, a Boolean, this is true iff you want to return the string before the first occurrence. Else, by default it is false and thus returns the bit after the first occurence.
+
+    The only difference is stristr() is not case sensitive whereas strstr() is case sensitive.
+
+
+
+    2. What is a Database schema?
+    Database schemata are different ways of organizing data. The main four are relational, hierarchical, network & flatfile. MySQL uses the relational schema, which is represented in tables.
+
+    3. The DML stands for the Data Manipulation Language of MySQL.
+    Describe the objective of each of the following DML commands.
+    o SELECT – This selects the given, or all with *, column/s of the table
+    SELECT  `ColumnName`    =     Selects column titled `ColumnName`
+    SELECT *    =    Selects every column
+    o INSERT – This inserts a new row with the given data
+    INSERT INTO `table_name` VALUES (value1, value2, value3…)
+    ​This inserts a value into every single column, in order
+    INSERT INTO `table_name` (col1, col2) VALUES (val1, val2)
+    This inserts a value only into the given columns. All other columns are initialized to default.
+    o DELETE – This deletes a row (usually with the specific given criteria)
+    DELETE FROM `table_name` WHERE …
+    ​​Deletes from table all items that fit given attributes
+    4. Describe the parameters and objectives of the PHP functions explode() and split().
+    Explain how these functions are similar and how they differ.
+    The intention of both functions is to split a string into an array by a given delimiter, the first parameter being that delimiter and the second parameter being the string. The only difference is that split allows for a Regex search in the delimiter, whereas, explode is just a plaintext search.
+
+    5. The following are regular expression functions for examining and modifying text in PHP.
+    (a) Describe the objective of each function.
+    (b) List the required parameters for each function.
+    (c) For each function, provide a specific example to illustrate the usage and resulting output.
+
+    o preg_match()
+    o preg_match_all()
+    o preg_replace()
+    o preg_replace_callback()
+    o preg_grep()
+    o preg_split(
+    preg_match() - Searches string for pattern, returning true iff pattern exists
+    preg_match_all() -  Matches all occurences of pattern in string.
+    preg_replace() - Finds and replaces all patterns matching the first input with the second input, where Regex is allowed in the parameter
+    preg_split() - Splits string into an array by any character, just like split(), except it allows Regex as in the parameter
+    preg_grep() - Searches all elements of input_array, return all elements matching the Regex pattern input
+    preg_quote() - Puts a backslash in front of every special character in Regex (in addition to any letters passed in the second parameter). Useful to use before manipulating a piece of text in Regex that may contain periods, question marks, exclamation marks, asterisks, slashes and so forth (Set of special characters = { . \ + * ? [ ^ ] $ ( ) { } = ! < > | : - }) as they would otherwise screw up the Regex function. The backslash, of course, implies).
+
+    preg_replace_callback() - Just like preg_replace() above, except you can pass function, known as a callback, which will manipulate the matches you find. This gives you newfound, extra power in parsing and then displaying and manipulating the returned results. By default, it returns an array containing the matches.
+
+
+
+    6. Assume the following MySQL database exists: Schema and data records.
+
+
+
+
+
+    (a) Write a SELECT query to list all rows for columns name and price
+
+
+
+
+
+
+
+
+    (b) Write a SELECT query to list all rows where quantity is less than or equal to 2000. Include the columns for name and quantity.
+    </p>
+
+  </body>
+</html>

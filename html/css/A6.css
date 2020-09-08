@@ -1,0 +1,11 @@
+*:focus {
+    outline: 0;
+}
+
+* {
+  cursor: auto;
+}
+
+.row:after {
+  display: table;
+}

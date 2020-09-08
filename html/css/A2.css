@@ -1,0 +1,53 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+#content {
+  border-radius: 30px;
+  background-color: white;
+}
+
+
+#video {
+  background-color: dodgerblue;
+  border-radius: 15px;
+  display: block;
+  width: 100;
+  margin: auto;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+table {
+  /* These two lines center the table */
+  margin-left: auto;
+  margin-right: auto;
+  /* ------------------------------- */
+  font-size: 15px;
+  border-radius: 15px;
+  background-color: rgb(80,80,80);
+  color: white;
+}
+
+/* Lightblue Background reaches down farther*/
+#extend {
+  padding-bottom: 10px;
+}
+
+/* This makes the first column italic */
+td:first-child {
+  font-style: italic;
+}
+/* ---------------------------------- */
+
+/* This makes the first column bold */
+tr:first-child {
+  font-size: 17px;
+  font-style: bold;
+}
+/* -------------------------------- */

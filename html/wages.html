@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Wages App</title>
+  <!-- Download jQuery Libraries from CDNs. Includes Mobile CSS and core JavaScript files -->
+  <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <script type='text/javascript' src='js/wages.js'></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div data-role="page">
+    <div data-role="header">
+      <h1>Wages App</h1>
+    </div>
+
+    <div data-role="content">
+
+      <!-- DATA INPUT FOR RATE OF PAY -->
+      <label for="rate">Rate of pay : $</label>
+      <input type='range' min=0 max=100 id='rate' min='0'  max='90'>
+
+      <!-- DATA INPUT FOR HOURS WORKED -->
+      <label for="hours">Hours Worked:</label>
+      <input type='range' min=1 max=100 id='hours' min='0' max='80'>
+      <br>
+
+
+      <!-- BUTTON -->
+           <button onclick="display();">
+             Compute Wages
+           </button>
+
+           <!-- DISPLAY OUTPUT IN A TABLE -->
+           <br>
+           <table id="data">
+             <tr>
+               <td>Normal Wages: </td>
+               <td id='normalHrsDisplay'> $0</td>
+             </tr>
+             <tr>
+               <td>Wages Overtime: </td>
+               <td id='overtimeDisplay'> $0</td>
+             </tr>
+             <tr>
+               <td>Total Wages: </td>
+               <td id='totalDisplay'> $0</td>
+             </tr>
+           </table>
+         </div>
+
+         <div data-role="footer">
+           <small><i>Mobile App</i></small>
+         </div>
+       </div>
+     </body>
+
+     </html>
