@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monty Hall Game</title>
+    <meta charset='UTF-8'>
+    <script src='./A4.js'></script>
+    <link rel='stylesheet' href='./A4.css'>
+    <style>
+    .column {
+      float: left;
+      width: 33.33%;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .doors{
+      height: 400px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
+</head>
+
+<h1>Monty Hall</h1>
+<body onload='startMonty();'>
+
+    <div class='row'>
+        <div class='column'>
+            <input id='door0' class='doors' type='image' src='./closed-door.png'
+                   onclick='chooseDoor(0);'/>
+        </div>
+        <div class='column'>
+            <input id='door1' class='doors' type='image' src='./closed-door.png'
+                   onclick='chooseDoor(1);'/>
+        </div>
+        <div class='column'>
+            <input id='door2' class='doors' type='image' src='./closed-door.png'
+                  onclick='chooseDoor(2);'/>
+        </div>
+    </div>
+
+    <h3 id='display' style='font-size: 32px;'></h3>
+</body>
+</html>
+
+
+<!--
+
+MONTY HALL
+
+Columns
+- IMG 1
+- IMG 2
+- IMG 3
+
+INSTRUCTIONS
+
+-->
