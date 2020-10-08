@@ -69,7 +69,7 @@ function remainingDoor(door1, door2) {
 }
 
 function setDoor(n, img) {
-    document.getElementById('door'+n.toString()).src = img+'-door.png'
+    document.getElementById('door'+n.toString()).src = 'images/'+img+'-door.png'
 }
 
 function closeDoors() {
