@@ -2,10 +2,9 @@
 var startTime, stopTime, str;
 var highScore = Number.POSITIVE_INFINITY;
 
-var wordMix = ["Charlemagne", "supercalifragilisticexpialidocious", "Camembert", "cardamom", "halvah",
-"papaya", "coffee", "dark chocolate", "Valhrona", "modulus", "generating function", "Haskell", "monads", "functors",
-"Number Theory", "Combinatorics", "Abstract Algebra", "Mathematics", "Computer Science", "Ramanujan", "Fermat",
-"Bertrand Russell", "John Stuart Mill", "functional", "eccentric", "professor"]
+// 24 crayon colors
+var wordMix = ["red", "yellow", "blue", "brown", "orange", "green", "violet", "black", "carnation pink", "yellow orange", "blue green", "red violet", "red orange", "yellow green", "blue violet", "white", "violet red", "dandelion", "cerulean", "apricot", "scarlet", "green yellow", "indigo and gray"];
+
 
 function start() {
   var input = document.getElementById("input");
